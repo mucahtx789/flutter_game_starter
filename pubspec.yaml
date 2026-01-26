@@ -1,0 +1,35 @@
+name: game
+description: "A new Flutter project."
+
+# Yayınlama ayarları
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.7 <4.0.0'
+
+dependencies:
+  shared_preferences: ^2.2.2  
+  google_sign_in: ^6.1.6
+  flutter:
+    sdk: flutter
+
+  # İkonlar için standart paket
+  cupertino_icons: ^1.0.8
+
+  # Responsive tasarım (tüm telefonlara uyumluluk) için gerekli
+  flutter_screenutil: ^5.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  # Material Design ikonlarını ve bileşenlerini kullanabilmek için
+  uses-material-design: true
+
+  # JSON dil dosyalarımızın bulunduğu klasörü buraya tanıtıyoruz
+  assets:
+    - assets/lang/
