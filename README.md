@@ -1,16 +1,35 @@
-# game
 
-A new Flutter project.
 
-## Getting Started
+Bu proje, Flutter ile geliştirilecek mobil oyunlar için modüler, ölçeklenebilir ve performans odaklı bir temel (boilerplate) yapısıdır. Projenin amacı, bir oyunun ihtiyaç duyduğu temel altyapıları (dil desteği, veri yönetimi, responsive tasarım) en baştan hazır sunmaktır.
 
-This project is a starting point for a Flutter application.
+## 📸 Ekran Görüntüleri
 
-A few resources to get you started if this is your first Flutter project:
+Aşağıda uygulamanın mevcut arayüz gelişimini görebilirsiniz:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Yükleme Ekranı | Ana Menü | Dil Seçimi |
+| :---: | :---: | :---: |
+| ![Yükleme Ekranı](ekran1.png) | ![Ana Menü](ekran2.png) | ![Dil Seçimi](ekran3.png) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Öne Çıkan Özellikler
+
+* **Dinamik Dil Motoru (Localization):** JSON tabanlı sistem. Uygulama içinden anlık dil değişimi yapılabilir. (Desteklenenler: TR, EN, IT, DE, ES, PT, RU).
+* **Kalıcı Veri Yönetimi (DataManager):** `shared_preferences` entegrasyonu ile altın, seviye ve kullanıcı ayarları cihaz hafızasında güvenle saklanır.
+* **Responsive Tasarım:** `flutter_screenutil` paketi ile tüm telefon ve tablet boyutlarına tam uyumlu, pixel-perfect arayüz.
+* **Google Play Games Altyapısı:** İleride eklenecek "Bulut Kayıt" (Cloud Save) ve "Başarımlar" (Achievements) için hazır mimari.
+* **Şık Görsel Tasarım:** Özel gradyan geçişleri ve oyun atmosferine uygun UI elementleri.
+
+##  Proje Yapısı
+
+- `lib/data_manager.dart`: Yerel veri saklama ve yönetim merkezi.
+- `lib/localization_service.dart`: Çoklu dil desteği ve JSON yükleme mantığı.
+- `lib/loading_screen.dart`: Uygulama açılış ve varlık yükleme simülasyonu.
+- `lib/home_menu.dart`: Ana kontrol merkezi ve kullanıcı arayüzü.
+
+## 🚀 Başlangıç
+
+1. Bu depoyu klonlayın.
+2. `flutter pub get` komutu ile paketleri indirin.
+3. `flutter run` ile projeyi başlatın.
+
+---
+*Geliştirme aşamasındadır. Yakında: Oyun içi mekanikler ve Google Play Games entegrasyonu!*
